@@ -14,3 +14,4 @@ Rails.application.config.assets.precompile += %w( *.svg *.eot *.woff *.woff2 *.t
 # application.js, application.css, and all non-JS/CSS in the app/assets
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
+# Rails.root.join('node_modules')
