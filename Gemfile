@@ -3,8 +3,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 gem 'bcrypt', '3.1.11'
-gem 'better_errors'
-gem 'binding_of_caller'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'carrierwave'
 gem 'coffee-rails', '~> 4.2'
@@ -12,7 +10,6 @@ gem 'dotenv-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'mini_magick'
 gem 'non-stupid-digest-assets'
-gem 'pry-rails'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.4'
@@ -25,19 +22,22 @@ group :development, :test do
 end
 
 group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'faker'
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'letter_opener_web'
+  gem 'pry-rails'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'letter_opener_web'
+  gem 'web-console', '>= 3.3.0'
 
 end
 
 group :test do
   gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
   gem 'chromedriver-helper'
+  gem 'selenium-webdriver'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
