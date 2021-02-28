@@ -7,6 +7,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'carrierwave'
 gem 'coffee-rails', '~> 4.2'
 gem 'dotenv-rails'
+gem 'fog-aws'
 gem 'jbuilder', '~> 2.5'
 gem 'mini_magick'
 gem 'non-stupid-digest-assets'
